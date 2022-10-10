@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menus</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 0;
+        }
+
+        .side-menu {
+            list-style: none;
+            border: red 1px solid;
+            /* background-color: blue; */
+            width: 150px;
+            padding: 10px;
+            border-radius: 5px;
+            margin-left: 15px;
+        }
+
+        .side-menu li {
+            line-height: 30px;
+        }
+
+        .side-menu li a {
+            text-decoration: none;
+            /* color: white; */
+            border-bottom: 1px solid #fff;
+            display: inline-block;
+        }
+
+        .side-menu li:last-child a {
+            border: none;
+        }
+
+        .side-menu li a:hover {
+            color: salmon;
+            font-size: 20px;
+        }
+
+        .navbar {
+            list-style: none;
+            background-color: blue;
+            overflow: hidden;
+            padding: 10px 15px;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            padding: 20px 15px;
+
+        }
+
+        .navbar li a:hover {
+            color: salmon;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Links</a></li>
+            <li><a href="#">Hire us</a></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <br>
+        <ul class="side-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Links</a></li>
+            <li><a href="#">Hire us</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

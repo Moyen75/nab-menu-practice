@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 200px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 0;
+        }
+
+        .list-items {
+            list-style: none;
+            padding: 0;
+        }
+
+        .list-items li {
+            padding: 5px 10px;
+            transition: all 0.5s;
+            line-height: 20px;
+            border-bottom: 1px solid slategrey;
+        }
+
+        .list-items li:hover {
+            background-color: lightgray;
+            color: salmon;
+        }
+
+        .list-items li a {
+            text-decoration: none;
+            color: black;
+            transition: all 0.5s;
+        }
+
+        .list-items li:hover a {
+            color: salmon;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-container {
+            background-color: green;
+            padding: 10px 15px;
+        }
+
+        .nav-bar {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+        }
+
+        .nav-bar li {
+            /* float: left;*/
+            margin-left: 10px;
+        }
+
+        .nav-bar li a {
+            text-decoration: none;
+            color: white;
+            position: relative;
+            transition: all 0.5s;
+        }
+
+        .nav-bar li a::before {
+            content: "";
+            width: 0;
+            height: 2px;
+            position: absolute;
+            background-color: red;
+            transition: all 0.9s;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            z-index: 999;
+        }
+
+        .nav-bar li a:hover {
+            color: black;
+        }
+
+        .nav-bar li a:hover::before {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="list-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </div>
+    <div class="nav-container">
+        <ul class="nav-bar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
